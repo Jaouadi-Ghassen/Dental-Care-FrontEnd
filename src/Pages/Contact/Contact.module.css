@@ -1,0 +1,182 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+
+.top{
+    text-align: center;
+    padding: 4rem 20rem; 
+    background-color: rgb(245, 245, 245);
+    font-size: 22px;
+    color: #313F4E;
+    background-image: url(http://www.clontarfdentalpractice.ie/wp-content/uploads/2014/03/textures.png);
+    background-size: cover;
+}
+
+.top .header{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #313F4E;
+    padding-bottom: 30px;
+}
+
+.left{
+    margin-left: 250px;
+    width: 27%;
+    line-height: 35px;
+    background-color: rgb(245, 245, 245);
+    color: #313F4E;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.image{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 10px;
+    width: 700px;
+    background-image:url(http://www.clontarfdentalpractice.ie/wp-content/uploads/2014/03/textures.png);
+    margin-left: 70px;
+}
+
+.parag{
+    font-size: 18px;
+    color: #313F4E;
+    
+}
+
+.form .input{   
+    width: 100%;
+    
+}
+
+.input{
+    /* background-color: #313F4E; */
+    height: 70px;
+}
+
+.form .log_btn{
+    padding: 10px;
+    border: none;
+    background-color: #A0CEC2;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.form .log_btn:hover{
+    background-color: #90ccbc;
+}
+
+
+.cardSection{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.layout{
+    display: flex;
+    padding: 20px;
+    background-color: white;
+}
+
+.vl {
+    margin-top: 75px;
+    border-left: 1px solid gray;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    
+}
+
+.signin{
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+    font-weight: 400;
+}
+
+.signin .link {
+    color: royalblue;
+    text-decoration: none;
+}
+
+.signin .link:hover{
+    text-decoration: underline royalblue;
+}
+
+.flex {
+    display: flex;
+    gap:8px;
+}
+
+.grid {
+    display: flex;
+    width: 100%;
+    gap:18px;
+}
+
+.item {
+    width: 150px;
+    height: 400px;
+    background-color: #eee;
+}
+@media (max-width: 768px) {
+    .layout {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .left {
+      margin-left: 0;
+      width: 100%;
+    }
+    
+    .form {
+      width: 100%;
+      margin-left: 0;
+    }
+    .auth{
+        margin-bottom: 220px;
+    }
+  }
+  
+  /* For screens smaller than 480px */
+  @media (max-width: 480px) {
+    .hdr {
+      padding: 2rem;
+    }
+    
+    .title {
+      font-size: 24px;
+    }
+    
+    .top {
+      padding: 0.5rem;
+    }
+    
+    .left {
+      font-size: 16px;
+    }
+    
+    .form {
+      padding: 20px;
+      width: 100%;
+    }
+  }
+
+

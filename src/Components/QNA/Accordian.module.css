@@ -1,0 +1,158 @@
+/* Base styles */
+
+.accordion {
+  border: 1px solid #90ccbc;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  width: 100%;
+  border-radius: 5px;
+  
+}
+
+.toggleBtn {
+  border: 1px solid #90ccbc;
+  width: 100%;
+  background-color: white;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.title {
+  flex-grow: 1;
+  font-size: 20px;
+  color: #000;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.expanded .icon {
+  transform: rotate(135deg);
+}
+
+.content {
+  background-color: white;
+  color: grey;
+  padding: 20px;
+  display: none;
+  height: 100%;
+  text-align: justify;
+}
+
+.expanded .content {
+  display: block;
+}
+
+.image {
+  width: 100%;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+}
+
+.imageWrapper {
+  width: 100%;
+}
+
+.accd {
+  width: 100%;
+  margin-right: 30px;
+  padding: 2rem 2rem 0rem 4rem;
+  border-radius: 8px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(245, 245, 245); */
+  border-radius: 8px;
+  padding: 1rem 12rem;
+}
+
+.prag {
+  margin-top: 20px;
+  text-align: justify;
+  color: #7fcdb8;
+  /* line-height: 12px; */
+  padding-bottom: 20px;
+}
+
+.qna {
+  padding-bottom: 30px;
+  color: #7fcdb8;
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 0 2rem;
+
+  }
+
+  .accd {
+    padding: 2rem;
+  
+  }
+
+  .imageWrapper {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 0 2rem;
+    text-align: center;
+    line-height: 25px;
+    padding: 0px;
+    background-color:white;
+  }
+
+  .image{
+    width: 100%;
+  } 
+
+  .accd .prag{
+    text-align: center;
+  }
+
+  .accd .prag2{
+    text-align: justify;
+  }
+
+  .toggleBtn {
+    height: auto;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .expanded .icon {
+    display: inline-block;
+  }
+
+}

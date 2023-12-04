@@ -1,0 +1,66 @@
+/* Card.module.css */
+.card {
+    border-radius: 0px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    width: 110%;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 110%;
+    height: 330px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 50px;
+  }
+  
+  /* Center the button */
+  .learn-more-btn {
+    background-color: #313F4E;
+    color: white;
+    border-radius: 50px;
+    font-size: 17px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      max-width: 400px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card {
+      max-width: 350px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .card {
+      max-width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .body{
+      width: 350px;
+    }
+  }
+  

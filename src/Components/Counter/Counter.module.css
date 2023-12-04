@@ -1,0 +1,92 @@
+.section1{
+    display: flex;
+    flex-direction: column;
+    line-height: 8px;
+    font-size: 1.5rem;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+}
+
+.title{
+    font-size: 3em;
+}
+
+.info{
+    font-size: 1.5rem;
+}
+
+.cree{
+    display: flex;
+    flex-direction: column;
+    line-height: 8px;
+    font-size: 1.5em;
+}
+
+.wrapper{
+    text-align: center;
+    padding: 4rem 20rem; /* Adjust padding for smaller screens */
+    font-size: 18px;
+    /* background-color:  rgb(245, 245, 245); */
+    color: #313F4E;
+    background-image: url("https://www.radiustheme.com/demo/html/medilink/medilink/img/figure/figure8.png");
+    background-repeat: no-repeat;
+}
+
+.btn{ 
+    background-color: #313F4E;
+    color: white;
+    border-radius: 50px;
+    font-size: 19px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+    width: 300px;
+}
+/* Existing styles remain the same */
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px */
+    .section {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .btn {
+      width: 100%; /* Make the button full width */
+    }
+    
+    .wrapper {
+      padding: 2rem; /* Adjust padding for smaller screens */
+    }
+    
+    .title, .info, .cree {
+      font-size: 1.5em; /* Adjust font sizes for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Adjust styles for screens smaller than 480px (typical mobile screens) */
+    .info, .cree {
+      font-size: 1em; /* Adjust font sizes for mobile screens */
+    }
+
+    .title{
+        font-size: 1.5em;
+    }
+    
+    .btn {
+      font-size: 16px; /* Adjust font size for mobile screens */
+    }
+    
+    .wrapper {
+      padding: 1rem; /* Adjust padding for mobile screens */
+    }
+  }
+  

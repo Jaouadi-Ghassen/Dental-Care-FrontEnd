@@ -1,0 +1,44 @@
+.video{
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_container{
+  position: relative;
+}
+
+.overlay{
+  font-size: 25px;
+  color: #eee;
+  position: absolute;
+  width: 100%;
+  height: 805px;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  line-height: 1em;
+}
+
+
+
+@media (max-width: 480px) {
+    .image{
+      width: 100%;
+      height: 300px;
+    } 
+    
+    .overlay h2{
+      text-align: center;
+      line-height: 1.2em;
+    }
+}

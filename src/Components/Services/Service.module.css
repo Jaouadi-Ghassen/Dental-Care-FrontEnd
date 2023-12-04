@@ -1,0 +1,55 @@
+.body{
+    padding: 2rem 10rem;    
+    background-image: url("https://radiustheme.com/demo/wordpress/themes/medilink/wp-content/uploads/2019/02/bg-22.jpg");
+}
+
+.section{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.info{
+    padding: 0 10rem;
+}
+
+
+.tit{
+    text-align: center;
+    color: #313F4E;
+    font-size: 2.5rem;
+}
+
+.desc{
+    text-align: center;
+    font-size: 1.125em;
+}
+
+.goto{
+    font-size: 18px;
+    text-align: end;
+}
+
+@media screen and (max-width: 768px) {
+    .body{
+        padding: 10px;
+    }
+
+    .section, .info {
+        padding: 10px;
+    }
+
+    .section {
+        gap: 10px; /* Reduced gap between cards for small screens */
+    }
+
+    .tit {
+        font-size: 2.2rem; /* Adjusted font size for small screens */
+    }
+
+    .desc {
+        font-size: 1.1em; /* Adjusted font size for small screens */
+    }
+}
